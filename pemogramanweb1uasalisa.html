@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Alisa Heriana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #fc2485;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1,
+        h2,
+        p {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        audio,
+        video {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Selamat Datang di Website Pribadi Alisa heriana!</h1>
+        <p>Hallo Manusia ini adalah tampilan utama website alisa heriana, silahkan pilih menu untuk menampilkan data
+            lain nya, untuk pilihan menu ada diatas ... enjoy the moment hehea.</p>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil">
+        <h2>Profil Saya</h2>
+        <p>Berikut profil singkat tentang saya
+            saya adalah seorang mahasiswi universitas pamulang semester 5 jurusan teknik informatika, saya kuliah sambil
+            bekerja.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Hallo nama saya Alisa heriana saya lahir di Depok 13 Mei 2002, saya tinggal di Depok bersama orang tua dan
+            adik saya, saya bekerja menjadi staff admin keuangan di perusahaan kecil bernama CV Karya Mandiri, hobby
+            saya adalah Traveling, saya sangat suka warna pink dan hal hal yang menggemaskan, makanan favorit saya
+            adalah ayam geprek, saya suka menonton film yang bergenre thiller komedi romantis, film thirrel favorit saya
+            adalah the call film dari korea, dan film komedi romantis saya adalah bussiness proposal drakor hehe,
+            silahkan klik menu galerry untuk melihat cuplikan film the call</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="Hello 🌻.jpg" alt="Deskripsi Gambar 1">
+        <img src="uas1.jpg" alt="Deskripsi Gambar 2">
+        <table>
+            <tr>
+                <th>Foto</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Foto 1</td>
+                <td>hallo selamat datang digalery saya, saya orang yang jarang foto jadi saya menggunakan ilustrasi
+                    untuk galery Saya</td>
+            </tr>
+            <tr>
+                <td>Foto 2</td>
+                <td>ini adalah poster dari film the call</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Anda dapat menghubungi saya melalui email: <a
+                href="mailto:herianaalisa68@gmail.com">herianaalisa68@gmail.com</a></p>
+        <audio controls>
+            <source src="lagu uas.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <video controls>
+            <source src="vidio uas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button onclick="showDialog()">keluar</button>
+    </section>
+
+    <!-- JavaScript untuk Dialog Box -->
+    <script>
+        function showDialog() {
+            var dialogMessage = "Terima kasih telah mengunjungi website saya!, silahkan hubungi saya jika ada pertanyaan lainnya";
+            var userResponse = confirm(dialogMessage);
+
+            if (userResponse) {
+                alert("terimakasih selamat datang kembali!");
+            } else {
+                alert("Have a nice day!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
